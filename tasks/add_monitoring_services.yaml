@@ -1,0 +1,21 @@
+# This playbook will install Telegraf from InfluxData repo
+
+---  
+
+- name: Ensure InfluxData repo exists
+  lineinfile:
+    path: /etc/apt/sources.list
+    state: present
+    regexp: 'repos.influxdata.com'
+    line: deb https://repos.influxdata.com/{{ hostvars[inventory_hostname]['ansible_distribution']|lower }} {{ hostvars[inventory_hostname]['ansible_distribution_release'] }} stable
+
+- name: Add InfluxData package key
+  apt_key:
+    url:  https://repos.influxdata.com/influxdb.key
+    state: present
+
+- name: Update repositories cache and install "telegraf" package
+  apt:
+    name: telegraf
+    update_cache: yes
+    state: latest
