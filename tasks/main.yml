@@ -1,5 +1,5 @@
 ---
 
 - include_tasks:
-    name: add_monitoring_services.yaml
+    name: add_monitoring_services.yml
   when: ansible_os_family == 'Debian'
