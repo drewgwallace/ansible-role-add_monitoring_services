@@ -10,8 +10,9 @@
 ## Execution
 <pre>
     - hosts: all
-      roles:
-        - drewgwallace.ansible-role-add_monitoring_services
+      tasks:
+        - include_role:
+            name: drewgwallace.ansible-role-add_monitoring_services
 </pre>
 
 ----
