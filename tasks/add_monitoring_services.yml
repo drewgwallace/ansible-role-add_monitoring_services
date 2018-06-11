@@ -1,4 +1,6 @@
-# This playbook will install Telegraf from InfluxData repo
+# Purpose: This playbook will install Telegraf from InfluxData repo
+# Last Updated: 2018.06.11
+# Notes:
 
 ---  
 
