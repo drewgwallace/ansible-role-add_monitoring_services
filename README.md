@@ -12,7 +12,7 @@
     - hosts: all
       tasks:
         - include_role:
-            name: drewgwallace.ansible-role-add_monitoring_services
+            name: drewgwallace.add_monitoring_services
 </pre>
 
 ----
