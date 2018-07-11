@@ -9,7 +9,6 @@ dependencies: []
 galaxy_info:
   author: drewgwallace
   description: Install telegraf package.
-  company: Self
   license: MIT
   min_ansible_version: 2.4
   platforms:
