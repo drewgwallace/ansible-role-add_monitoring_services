@@ -9,6 +9,10 @@ dependencies: []
 galaxy_info:
   author: drewgwallace
   description: Install telegraf package.
+  galaxy_tags:
+    - system
+    - updates
+    - apt
   license: MIT
   min_ansible_version: 2.4
   platforms:
@@ -18,7 +22,4 @@ galaxy_info:
     - name: Ubuntu
       versions:
       - all
-  galaxy_tags:
-    - system
-    - updates
-    - apt
+  role_name: add_monitoring_services
